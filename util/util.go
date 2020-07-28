@@ -5,10 +5,20 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strings"
 )
 
+const URL_ValorantGetUUID = "https://valorant.iesdev.com/player/"
+const GeneralChannelID = "258438663438991360"
+const ValorantChannelID = "699325128080883804"
+const Message = "Hello, %s, your Valorant UUID is %s."
+
 type Secret struct {
-	DiscordClientSecret string
+	DiscordClientToken string
+}
+
+func GetURLForUUID(player, region string) string {
+	return URL_ValorantGetUUID + strings.ToLower(player) + "-" + region
 }
 
 func GetSecrets() Secret {
