@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"github.com/tbarnes94/ValorantWLNotificationBot/util"
+	"github.com/ValorantWLNotificationBot/util"
 )
 
 
