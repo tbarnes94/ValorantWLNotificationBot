@@ -2,11 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/bwmarrin/discordgo"
 	"github.com/ValorantWLNotificationBot/util"
+	"github.com/bwmarrin/discordgo"
 )
-
-
 
 func main() {
 	secret := util.GetSecrets()
